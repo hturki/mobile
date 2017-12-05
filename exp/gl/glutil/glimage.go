@@ -12,10 +12,10 @@ import (
 	"runtime"
 	"sync"
 
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/exp/f32"
-	"golang.org/x/mobile/geom"
-	"golang.org/x/mobile/gl"
+	"github.com/hturki/mobile/event/size"
+	"github.com/hturki/mobile/exp/f32"
+	"github.com/hturki/mobile/geom"
+	"github.com/hturki/mobile/gl"
 )
 
 // Images maintains the shared state used by a set of *Image objects.

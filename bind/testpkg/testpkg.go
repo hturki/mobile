@@ -5,7 +5,7 @@
 // +build darwin linux
 
 // Package testpkg contains bound functions for testing the cgo-JNI interface.
-// This is used in tests of golang.org/x/mobile/bind/java.
+// This is used in tests of github.com/hturki/mobile/bind/java.
 package testpkg
 
 //go:generate gobind -lang=go -outdir=go_testpkg .
@@ -21,11 +21,11 @@ import (
 	"syscall"
 	"time"
 
-	"golang.org/x/mobile/asset"
+	"github.com/hturki/mobile/asset"
 
-	"golang.org/x/mobile/bind/testpkg/secondpkg"
-	"golang.org/x/mobile/bind/testpkg/simplepkg"
-	"golang.org/x/mobile/bind/testpkg/unboundpkg"
+	"github.com/hturki/mobile/bind/testpkg/secondpkg"
+	"github.com/hturki/mobile/bind/testpkg/simplepkg"
+	"github.com/hturki/mobile/bind/testpkg/unboundpkg"
 )
 
 const (

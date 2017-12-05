@@ -57,14 +57,14 @@ import (
 	"time"
 	"unsafe"
 
-	"golang.org/x/mobile/app/internal/callfn"
-	"golang.org/x/mobile/event/key"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/geom"
-	"golang.org/x/mobile/internal/mobileinit"
+	"github.com/hturki/mobile/app/internal/callfn"
+	"github.com/hturki/mobile/event/key"
+	"github.com/hturki/mobile/event/lifecycle"
+	"github.com/hturki/mobile/event/paint"
+	"github.com/hturki/mobile/event/size"
+	"github.com/hturki/mobile/event/touch"
+	"github.com/hturki/mobile/geom"
+	"github.com/hturki/mobile/internal/mobileinit"
 )
 
 //export setCurrentContext

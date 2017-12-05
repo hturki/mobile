@@ -20,9 +20,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/mobile/internal/importers"
-	"golang.org/x/mobile/internal/importers/java"
-	"golang.org/x/mobile/internal/importers/objc"
+	"github.com/hturki/mobile/internal/importers"
+	"github.com/hturki/mobile/internal/importers/java"
+	"github.com/hturki/mobile/internal/importers/objc"
 )
 
 func init() {

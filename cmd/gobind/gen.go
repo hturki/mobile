@@ -19,9 +19,9 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/mobile/bind"
-	"golang.org/x/mobile/internal/importers"
-	"golang.org/x/mobile/internal/importers/java"
+	"github.com/hturki/mobile/bind"
+	"github.com/hturki/mobile/internal/importers"
+	"github.com/hturki/mobile/internal/importers/java"
 )
 
 func genPkg(p *types.Package, allPkg []*types.Package, classes []*java.Class) {
@@ -77,12 +77,12 @@ func genPkg(p *types.Package, allPkg []*types.Package, classes []*java.Class) {
 		closer()
 		// Generate support files along with the universe package
 		if p == nil {
-			p, err := build.Default.Import("golang.org/x/mobile/bind", ".", build.ImportComment)
+			p, err := build.Default.Import("github.com/hturki/mobile/bind", ".", build.ImportComment)
 			if err != nil {
-				errorf(`"golang.org/x/mobile/bind" is not found; run go get golang.org/x/mobile/bind: %v`)
+				errorf(`"github.com/hturki/mobile/bind" is not found; run go get github.com/hturki/mobile/bind: %v`)
 				return
 			}
-			repo := filepath.Clean(filepath.Join(p.Dir, "..")) // golang.org/x/mobile directory.
+			repo := filepath.Clean(filepath.Join(p.Dir, "..")) // github.com/hturki/mobile directory.
 			for _, javaFile := range []string{"Seq.java", "LoadJNI.java"} {
 				src := filepath.Join(repo, "bind/java/"+javaFile)
 				in, err := os.Open(src)
